@@ -2,7 +2,8 @@
   "scripts": {
     "test": "mocha test",
     "test:coverage": "nyc npm test",
-    "success": "cowsay 'gra gitara!'"
+    "success": "cowsay 'gra gitara!'",
+    "test:nyan": "npm test -- --reporter nyan"
   },
   "dependencies": {
     "cowsay": "^1.4.0",
