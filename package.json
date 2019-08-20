@@ -1,12 +1,13 @@
 {
   "scripts": {
     "test": "mocha test",
-    "test:coverage": "nyc npm test",
+    "test:coverage": "nyc npm test -- --watch",
     "success": "cowsay 'gra gitara!'",
     "test:nyan": "npm test -- --reporter nyan",
     "report-coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov"
   },
   "dependencies": {
+    "chai": "^4.2.0",
     "cowsay": "^1.4.0",
     "lolcat": "^1.0.0",
     "mocha": "^6.2.0",
