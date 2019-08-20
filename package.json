@@ -3,7 +3,8 @@
     "test": "mocha test",
     "test:coverage": "nyc npm test",
     "success": "cowsay 'gra gitara!'",
-    "test:nyan": "npm test -- --reporter nyan"
+    "test:nyan": "npm test -- --reporter nyan",
+    "report-coberage": "nyc report --reporter=text-lcov > coverage.lcov && codecov"
   },
   "dependencies": {
     "cowsay": "^1.4.0",
